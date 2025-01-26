@@ -1,0 +1,15 @@
+def is_prime (n) :
+  if n <= 1:
+      return false # الاعداد اقل من 2 ليست اوليه 
+      for i in range(2, int(n**0.5)+1):
+          if n % i ==1 :
+            return false 
+            return true 
+
+
+#example
+n =17
+if is_prime(n):
+    print(n, "is a prime number")
+else:
+    print(n, "is not a prime number")
